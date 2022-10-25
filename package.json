@@ -1,0 +1,54 @@
+{
+  "name": "Demoapp",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "build-ios": "react-native bundle --entry-file index.js --platform ios --dev false --bundle-output ./ios/bundle/index.ios.jsbundle --assets-dest ./ios/bundle",
+    "test": "jest",
+    "fix": "eslint --fix app App.js --ignore-pattern src/assets",
+    "lint": "eslint app App.js --quiet --ignore-pattern src/assets",
+    "build-ios-adhoc": "./scripts/build-ios-adhoc.sh",
+    "build-android": "./scripts/build-android.sh"
+  },
+  "dependencies": {
+    "moment": "^2.22.2",
+    "prop-types": "^15.6.2",
+    "react": "16.8.3",
+    "react-native": "0.59.3",
+    "react-native-check-box": "^2.1.1",
+    "react-native-elements": "^1.1.0",
+    "react-native-linear-gradient": "^2.4.1",
+    "react-native-scrollable-tab-view": "^0.10.0",
+    "react-native-simple-toast": "0.0.8",
+    "react-native-vector-icons": "^6.4.2",
+    "react-navigation": "^2.12.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/runtime": "^7.4.3",
+    "babel-jest": "^24.7.1",
+    "jest": "^24.7.1",
+    "metro-react-native-babel-preset": "^0.53.1",
+    "react-test-renderer": "16.8.3",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^4.19.1",
+    "eslint-config-fbjs": "^2.0.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-babel": "^5.1.0",
+    "eslint-plugin-flowtype": "^2.47.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-node": "^5.2.0",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-react": "^7.8.2",
+    "eslint-plugin-relay": "^0.0.21",
+    "eslint-plugin-standard": "^3.0.1",
+    "rn-auto-build": "^1.0.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
